@@ -8,7 +8,7 @@ metadata:
     tier: frontend
     purpose: deployment
 spec:
-  replicas: {{ Values.deployment.replicas}} # add value in values.yaml file
+  replicas: {{ .Values.deployment.replicas}} # add value in values.yaml file
   selector:
     matchLabels:
       app: nginx
